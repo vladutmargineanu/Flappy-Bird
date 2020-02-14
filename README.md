@@ -6,6 +6,7 @@ Homework for the Computer Graphics Elements course @ ACS, UPB 2019
 Implementare: OpenGL si C++.
 
  1. `Pasarea - desenare pasare:`
+ 
  - pasarea este creata dintr-un dreptunghi (corpul), cerc (capul), triunghi (ciocul, 
  un cerc pentru ochi si un triunghi pentru aripa.
  Pentru fiecare figura geometrica am implementat cate o functie in fisierul
@@ -14,6 +15,7 @@ Implementare: OpenGL si C++.
 
  2. `Mediul in care se deplaseaza pasarea` - desenare mediu si animatie, cu
   utilizarea optima a resurselor:
+  
  - am creat o pereche de dreptunghiuri, unul jos si altul sus. Pe acestea le-am
  desenat de NUMBER_RECTANGLES ori in scena in funcia Update cu factor de scalare si
  translatie diferit, in functie de starea jocului (dificultatea creste in timp).
@@ -21,6 +23,7 @@ Implementare: OpenGL si C++.
  3. `Gameplay:`
  
  a) animatii fluide pasare:
+ 
  - Pasarea se inclina in sus pe apasarea tastei SPACE, iar la caderea libera se
  inclin in jos.Pentru aceasta m-am ajutat de functiile OnKeyPress si OnKeyRelease
  pentru a determina directia.
@@ -28,6 +31,7 @@ Implementare: OpenGL si C++.
  crestem in timp, iar la coborare unghiul va fi negativul de la urcare.
 
  b) coliziuni:
+ 
  - pentru a determina daca exista coliziune, am creat o clasa Collision, in care
  exista metoda CheckCollision. Pentru fiecare dreptunghi desenat in Update, verific
  daca exista coliziune intre pasare si acesta, fiecare dreptunchi va avea
@@ -39,6 +43,7 @@ Implementare: OpenGL si C++.
  mai aproape punct de cerc, am folosit formulele:
 
  NearestX = Max(RectangleX, Min(CircleX, RectangleX + RectangleWidth));
+ 
  NearestY = Max(RectangleY, Min(CircleY, RectangleY + RectangleHeight));
 
  c) printare statistici in consola
@@ -60,11 +65,17 @@ Implementare: OpenGL si C++.
  2. Dificultatea jocului creste pe masura ce creste punctajul jucatorului:
  - jocul are 3 stari, fiecare stare are cate o metoda diferita de calculare a
  factorului de scalare, si anume (vor avea dimensiuni diferite fata de Oy):
+ 
  1) prin folosirea lui rand() 
+ 
  scaleX = scaleX +/- ( Timp / (rand() % 10 + variabila));
+ 
  2) doar prin Timp
+ 
  scaleX = ScaleX +/-Timp;
+ 
  3) in functie de numarul dreptunghiului de desenare
+ 
  scaleX = scaleX +/- (Timp / (i + 1));
 
  Fiecare stare a jocului are o dificultate diferita. Miscarea dreptunghiurilor pe
@@ -74,6 +85,7 @@ Implementare: OpenGL si C++.
  3. Animatie care sa simuleze modul prin care pasarea da din aripi
  - Aripa pasarii este un triunghi. Aceasta se misca doar in momentul apasarii
  tastei SPACE.
+ 
  - Pentru aceasta, m-am folosit de functiile OnKeyPress si OnKeyRelease, pentru a
  stii cand trebuie sa modific unghiul de rotatie angularWingStep. Aripa se roteste
  in intervalul [-PI / 6, PI/7].
