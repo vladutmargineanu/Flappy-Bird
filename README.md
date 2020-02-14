@@ -80,4 +80,5 @@ Implementare: OpenGL si C++.
 
 
  `Sursa informatii coliziuni folosita:`
+ 
  [https://yal.cc/rectangle-circle-intersection-test/?fbclid=IwAR3eGj5EOoGnTNxhSpGa]
