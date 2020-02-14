@@ -66,15 +66,15 @@ Implementare: OpenGL si C++.
  - jocul are 3 stari, fiecare stare are cate o metoda diferita de calculare a
  factorului de scalare, si anume (vor avea dimensiuni diferite fata de Oy):
  
- 1) prin folosirea lui rand() 
+ a) prin folosirea lui rand() 
  
  scaleX = scaleX +/- ( Timp / (rand() % 10 + variabila));
  
- 2) doar prin Timp
+ b) doar prin Timp
  
  scaleX = ScaleX +/-Timp;
  
- 3) in functie de numarul dreptunghiului de desenare
+ c) in functie de numarul dreptunghiului de desenare
  
  scaleX = scaleX +/- (Timp / (i + 1));
 
