@@ -19,6 +19,7 @@ Implementare: OpenGL si C++.
  translatie diferit, in functie de starea jocului (dificultatea creste in timp).
 
  3. `Gameplay:`
+ 
  a) animatii fluide pasare:
  - Pasarea se inclina in sus pe apasarea tastei SPACE, iar la caderea libera se
  inclin in jos.Pentru aceasta m-am ajutat de functiile OnKeyPress si OnKeyRelease
@@ -49,6 +50,7 @@ Implementare: OpenGL si C++.
  - Scorul este incrementat cu 1 la fiecare trecere de un triunghi in scena.
 
  `Bonus:`
+ 
  1. Animatie de scalare pentru perechile de dreptunghiuri:
  - Dreptunghiurile se comporta ca un set de usi glisante de la un lift modern. 
  - In functia Update, in bucla for in care construiesc dreptunghiurile, calculez
@@ -77,6 +79,6 @@ Implementare: OpenGL si C++.
  in intervalul [-PI / 6, PI/7].
 
 
- `Sursa informatii coliziuni folosita:`
- [https://yal.cc/rectangle-circle-intersection-test/?fbclid=IwAR3eGj5E_OoGnTNxhSpGa
-  0hif-_TIvrwhKabstNTYbaeQtXhgnLmXJiieSw]
+ Sursa informatii coliziuni folosita:
+ `https://yal.cc/rectangle-circle-intersection-test/?fbclid=IwAR3eGj5E_OoGnTNxhSpGa
+  0hif-TIvrwhKabstNTYbaeQtXhgnLmXJiieSw`
