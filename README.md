@@ -79,6 +79,6 @@ Implementare: OpenGL si C++.
  in intervalul [-PI / 6, PI/7].
 
 
- Sursa informatii coliziuni folosita:
- `[https://yal.cc/rectangle-circle-intersection-test/?fbclid=IwAR3eGj5E_OoGnTNxhSpGa
-  0hif-TIvrwhKabstNTYbaeQtXhgnLmXJiieSw]`
+ `Sursa informatii coliziuni folosita:`
+ [https://yal.cc/rectangle-circle-intersection-test/?fbclid=IwAR3eGj5E_OoGnTNxhSpGa
+  0hif-TIvrwhKabstNTYbaeQtXhgnLmXJiieSw]
