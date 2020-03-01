@@ -4,8 +4,7 @@ In cadrul temei 1 veti implementa propria versiune de Flappy Bird. Tot ce nu est
 
 `Pasarea`
 
-Pasarea va fi creata prin combinarea mai multor figuri geometrice pline (GL_FILL) generate de voi. Minim 2 primitive geometrice
-(e.g. triunghi, patrat, cerc, etc.) Trebuie sa creati cel putin corpul pasarii, capul si ciocul).
+Pasarea va fi creata prin combinarea mai multor figuri geometrice pline (GL_FILL) generate de voi. Minim 2 primitive geometrice (e.g. triunghi, patrat, cerc, etc.) Trebuie sa creati cel putin corpul pasarii, capul si ciocul).
 
 `Exemplu de pasare:`
 
